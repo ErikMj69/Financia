@@ -1,7 +1,7 @@
 /* * * * * * * * * * *  HEXSITH SERVER  * * * * * * * * * * */
 
 var port = 36912;
-var serverUrl = "127.0.0.1";
+var serverUrl = "192.168.0.13";
  
 var http = require("http");
 var path = require("path");
@@ -13,9 +13,10 @@ http.createServer( function(req, res) {
  
   var now = new Date();
 
+  req.url = (req.url === "/" ? "" : req.url);
   var filename = req.url || "index.html";
   var ext = path.extname(filename);
-  var localPath = 'app';
+  var localPath = 'www/';
   var validExtensions = {
     ".html" : "text/html",
     ".js": "application/javascript",
