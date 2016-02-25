@@ -1,5 +1,16 @@
 /* * * * * * * * *  financia.css  * * * * * * * * */
 
+/*                                   USED COLORS
+ - - - - - - - - - - - - - - - - - - - - - - - -
+                    Main Red:     #C7503E
+                       Links:     #F0F0F0
+                 Links hover:     #303030
+
+*/
+
+
+/*                             FONTS
+ - - - - - - - - - - - - - - - - - - */
 @font-face {
   font-family: PoorRich;
   src: url( ../fonts/PoorRich.ttf );
@@ -15,6 +26,9 @@
   src: url( ../fonts/Candara.ttf );
 }
 
+
+/*                           GENERAL
+ - - - - - - - - - - - - - - - - - - */
 a {
   outline: none;
   text-decoration: none;
@@ -24,6 +38,8 @@ body {
   background: transparent no-repeat fixed center url( ../images/icons/financiaWaterMark.png );
 }
 
+/*                            HEADER
+ - - - - - - - - - - - - - - - - - - */
 header {
   height: 50px;
 }
@@ -34,32 +50,34 @@ header nav {
   height: 50px;
 }
 
-.mainLogo {
+.headerLogo {
   margin-top: -7px;
   font-family: PoorRich;
   font-size: 42px;
 }
 
-.mainLogo a {
+.headerLogo a {
   display: block;
   outline: none;
   color: #FFF;
   text-decoration: none;
 }
 
-.mainLogo img {
+.headerLogo img {
   margin-top: -11px;
   margin-right: 10px;
   width: 42px;
   height: 42px;
 }
 
-.mainMenu {
+.headerMenu {
   margin-top: 6px;
 }
 
-.mainMenu ul li {
+.headerMenu ul li {
   border-radius: 5px;
+  float: left;
+  clear: right;
   list-style: none;
   padding: 0px 20px;
   
@@ -67,17 +85,61 @@ header nav {
   font-size: 26px;
 }
 
-.mainMenu ul li:hover {
+.headerMenu a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.headerMenu ul li:hover {
   background: #e3715f;
   cursor: pointer;
 }
 
-.mainMenu ul li:active {
+.headerMenu ul li:active {
   background: #e0624e;
 }
 
 
-/* FOOTER */
+/*                         MAIN MENU
+ - - - - - - - - - - - - - - - - - - */
+.main {
+  margin-top: 50px;
+  padding: 5em 0;
+}
+
+.firstSquare, .secondSquare {
+  margin-top: 5em;
+  height: 20em;
+}
+
+.thirdSquare, .fourthSquare, .fifthSquare {
+  margin: 5em 0;
+  height: 15em;
+}
+
+.firstSquare {
+  background: #C7503E;
+}
+
+.secondSquare {
+  background: #C7503E;
+}
+
+.thirdSquare {
+  background: #C7503E;
+}
+
+.fourthSquare {
+  background: #C7503E;
+}
+
+.fifthSquare {
+  background: #C7503E;
+}
+
+
+/*                            FOOTER
+ - - - - - - - - - - - - - - - - - - */
 footer {
   background-color: #F0F0F0;
   bottom: 0px;

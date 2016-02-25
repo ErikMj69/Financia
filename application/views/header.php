@@ -18,7 +18,7 @@
           <div class="row">
 
             <!-- Logo -->
-            <div class="col-xs-2 col-md-2 mainLogo">
+            <div class="col-xs-2 col-md-2 headerLogo">
               <a href="" title="financia's home">
                 <img src="<?=base_url()?>assets/images/icons/financiaLogoWhite72.png">
                 financia
@@ -26,9 +26,9 @@
             </div>
 
             <!-- Menu -->
-            <div class="col-xs-10 col-md-4 col-md-offset-6 mainMenu">
+            <div class="col-xs-10 col-md-3 col-md-offset-7 headerMenu">
               <ul>
-                <li>Registros</li>
+                <li><a href="records">Registros</a></li>
                 <li>Estadísticas</li>
               </ul>
             </div>

@@ -19,8 +19,14 @@ class Records extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index() {
-      $this->load->view('header/default');
-      $this->load->view('body/home');
-      $this->load->view('footer/default');
+      $this->load->view('header');
+      $this->load->view('records/home');
+      $this->load->view('footer');
+	}
+  
+    public function home() {
+      $this->load->view('header');
+      $this->load->view('records/home');
+      $this->load->view('footer');
 	}
 }

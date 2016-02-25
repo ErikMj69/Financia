@@ -23,8 +23,8 @@ class Home extends CI_Controller {
       // Prepare data
       $data = array('titlepage' => "financia");
       
-      $this->load->view('header/default', $data);
-      $this->load->view('body/home');
-      $this->load->view('footer/default');
+      $this->load->view('header', $data);
+      $this->load->view('home/home');
+      $this->load->view('footer');
 	}
 }
